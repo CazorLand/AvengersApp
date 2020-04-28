@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Battle" representedClassName="Battle" syncable="YES" codeGenerationType="class">
+        <attribute name="battleId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="battleWinner" optional="YES" attributeType="String"/>
+        <relationship name="fighter1" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Heroes" inverseName="battles" inverseEntity="Heroes"/>
+        <relationship name="fighter2" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Villains" inverseName="battles" inverseEntity="Villains"/>
+    </entity>
+    <entity name="Heroes" representedClassName="Heroes" syncable="YES" codeGenerationType="class">
+        <attribute name="heroeDescription" optional="YES" attributeType="String"/>
+        <attribute name="heroeImage" optional="YES" attributeType="String"/>
+        <attribute name="heroeName" optional="YES" attributeType="String"/>
+        <attribute name="heroePower" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="battles" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Battle" inverseName="fighter1" inverseEntity="Battle"/>
+    </entity>
+    <entity name="Villains" representedClassName="Villains" syncable="YES" codeGenerationType="class">
+        <attribute name="villainDescription" optional="YES" attributeType="String"/>
+        <attribute name="villainImage" optional="YES" attributeType="String"/>
+        <attribute name="villainName" optional="YES" attributeType="String"/>
+        <attribute name="villainPower" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="battles" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Battle" inverseName="fighter2" inverseEntity="Battle"/>
+    </entity>
+    <elements>
+        <element name="Battle" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="Heroes" positionX="-54" positionY="9" width="128" height="118"/>
+        <element name="Villains" positionX="-36" positionY="18" width="128" height="118"/>
+    </elements>
+</model>
