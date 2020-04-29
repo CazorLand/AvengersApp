@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C31856540552937BA84D68F /* Pods_AvengersApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E753F041EA56C2E473F6F1 /* Pods_AvengersApp.framework */; };
 		D04A75C22458117600526B3D /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04A75C12458117600526B3D /* DataProvider.swift */; };
 		D04A75C424581CD500526B3D /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04A75C324581CD500526B3D /* Database.swift */; };
 		D04A75C72458286200526B3D /* AvengersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04A75C62458286200526B3D /* AvengersData.swift */; };
@@ -23,9 +22,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		223A3C9B4688C0DC9DAA8C47 /* Pods-AvengersApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvengersApp.release.xcconfig"; path = "Target Support Files/Pods-AvengersApp/Pods-AvengersApp.release.xcconfig"; sourceTree = "<group>"; };
-		52E753F041EA56C2E473F6F1 /* Pods_AvengersApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AvengersApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AC35EE85C219FBE63079932 /* Pods-AvengersApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvengersApp.debug.xcconfig"; path = "Target Support Files/Pods-AvengersApp/Pods-AvengersApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D04A75C12458117600526B3D /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		D04A75C324581CD500526B3D /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		D04A75C62458286200526B3D /* AvengersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvengersData.swift; sourceTree = "<group>"; };
@@ -47,7 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C31856540552937BA84D68F /* Pods_AvengersApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,18 +52,8 @@
 		09DCDF465C7F0A3072A300FA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9AC35EE85C219FBE63079932 /* Pods-AvengersApp.debug.xcconfig */,
-				223A3C9B4688C0DC9DAA8C47 /* Pods-AvengersApp.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		54B09E8B65F6A4EE167F9491 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				52E753F041EA56C2E473F6F1 /* Pods_AvengersApp.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D04A75C52458224F00526B3D /* Heroes */ = {
@@ -86,7 +71,6 @@
 				D0B6A5CE24543ADE0080F143 /* AvengersApp */,
 				D0B6A5CD24543ADE0080F143 /* Products */,
 				09DCDF465C7F0A3072A300FA /* Pods */,
-				54B09E8B65F6A4EE167F9491 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,7 +164,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0B6A5E324543ADF0080F143 /* Build configuration list for PBXNativeTarget "AvengersApp" */;
 			buildPhases = (
-				98DD597FCAB0CD9A037BA2F2 /* [CP] Check Pods Manifest.lock */,
 				D0B6A5C824543ADE0080F143 /* Sources */,
 				D0B6A5C924543ADE0080F143 /* Frameworks */,
 				D0B6A5CA24543ADE0080F143 /* Resources */,
@@ -240,31 +223,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		98DD597FCAB0CD9A037BA2F2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AvengersApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D0B6A5C824543ADE0080F143 /* Sources */ = {
@@ -420,7 +378,6 @@
 		};
 		D0B6A5E424543ADF0080F143 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AC35EE85C219FBE63079932 /* Pods-AvengersApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,7 +396,6 @@
 		};
 		D0B6A5E524543ADF0080F143 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 223A3C9B4688C0DC9DAA8C47 /* Pods-AvengersApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
